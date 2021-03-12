@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Player Registration</title>
+</head>
+<body>
+<form action="./InsertPlayerServlet" method="post">
+ <div>
+        <div style="background-color: rgb(178, 200, 224); margin: auto; width: 400px; height: 50px; ">
+            <h2 style="text-align: center; ">Player Details</h2>
+        </div>
+        <div style="background-color: rgb(152, 208, 223); margin: auto; width: 400px;
+         height: auto; margin-top: 20px;">
+
+          
+                <table>
+                 <tr>
+                        <td colspan="1"><i>Player Id</i><span style="color: red;">*</span> </td>
+                        <td><input type="text" name="id" placeholder="Enter Player Id" /></td>
+                    </tr>
+                       
+                    <tr>
+                        <td colspan="1"><i>Name</i><span style="color: red;">*</span> </td>
+                        <td><input type="text" name="name" placeholder="Enter your name" /></td>
+                    </tr>
+                    <tr>
+                           <td><i>DOB<span style="color: red;">*</span> </td>
+                        <td><input type="date" name="dob" /></td>
+                    </tr>
+                    <tr>
+                           <td><i>Age<span style="color: red;">*</span> </td>
+                        <td><input type="number" name="age" placeholder="Enter your age" /></td>
+                    </tr>
+                    <tr>
+                           <td><i>Email<span style="color: red;">*</span> </td>
+                        <td><input type="email" name="email" placeholder="abc12@xyz.com" /></td>
+                    </tr>
+                    
+                     <tr>
+                           <td><i>Country<span style="color: red;">*</span> </td>
+                        <td> <select id="country" name="country">
+                                <option>India</option>
+                                <option>America</option>
+                                <option>Pakistan</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                           <td><i>Skills<span style="color: red;">*</span> </td>
+                        <td><input type="checkbox" name="skills" />Batting <input type="checkbox"
+                                name="skills" />Bowling</td>
+                        <!-- <td><input type="checkbox" name="skills"/>Bowling</td> -->
+
+                    </tr>
+                    <tr>
+                           <td><i>Batting Style </td>
+                        <td><input type="radio" name="bat_style" />Right Handed <input type="radio"
+                                name="bat_style" />Left Handed</td>
+                        <!-- <td><input type="radio" name="bat_style"/>Left Handed</td> -->
+                    </tr>
+                    <tr>
+                           <td><i>Bowling Style </td>
+                        <td><input type="radio" name="bowl_style" />Right Handed <input type="radio"
+                                name="bowl_style" />Left Handed</td>
+                        <!-- <td><input type="radio" name="bowl_style"/>Left Handed</td> -->
+                    </tr>
+                    <tr>
+                           <td><i>Match<span style="color: red;">*</span> </td>
+                        <td><input type="number" name="match" placeholder="Total matches played" /></td>
+                    </tr>
+                    <tr>
+                    
+                   
+                           <td><i>Runs<span style="color: red;">*</span> </td>
+                        <td><input type="number" name="run" placeholder="Total runs scored" /></td>
+                    </tr>
+                    <tr>
+                           <td><i>Wickets<span style="color: red;">*</span> </td>
+                        <td><input type="number" name="wickets" placeholder="Wickets" /></td>
+                    </tr>
+                    
+                </table>
+            
+
+      
+
+   
+    </div>
+   
+<input type="submit" value="Add Player">
+
+</form>
+</body>
+</html>
